@@ -38,7 +38,6 @@ nombre_minus = nombre_mayus.lower()
 nombre_titulo = nombre_minus.title()
 
 #EJERCICIO CALCULADORA DE PROPINAS EN UN RESTAURANTE
-
 print("CALCULADORA DE PROPINAS")
 
 monto_total = int(input("INGRESE EL MONTO TOTAL DE LA CUENTA: 3"))
