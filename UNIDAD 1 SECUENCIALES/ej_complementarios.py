@@ -36,3 +36,18 @@ nombre_mayus = "JUAN MARTIN"
 nombre_minus = nombre_mayus.lower()
 #16)
 nombre_titulo = nombre_minus.title()
+
+#EJERCICIO CALCULADORA DE PROPINAS EN UN RESTAURANTE
+
+print("CALCULADORA DE PROPINAS")
+
+monto_total = int(input("INGRESE EL MONTO TOTAL DE LA CUENTA: 3"))
+propina_sugerida_10 = monto_total * 0.10
+print(f"PROPINA SUGERIDA (10%): {propina_sugerida_10}")
+propina_sugerida_15 = monto_total * 0.15
+print(f"PROPINA SUGERIDA (15%): {propina_sugerida_15}")
+total_10 = monto_total + propina_sugerida_10
+print(f"TOTAL A PAGAR (10%): {total_10}")
+total_15 = monto_total + propina_sugerida_15
+print(f"TOTAL A PAGAR (15%): {total_15}")
+
