@@ -3,7 +3,7 @@ Tecnicatura Universitaria en Programación
 📍 Universidad Tecnológica Nacional
 
 ✨ Estudiante
-Nombre: Garcia, Juan Martin [Modificar con su nombre completo]
+Nombre: Garcia, Juan Martin 
 Comisión: M2025-4
 📂 Descripción del Repositorio
 Este repositorio almacena todas los trabajos prácticos realizados durante la cursada de Programación 1.
