@@ -28,7 +28,8 @@ if not error:
     examen = ["Lunes", "Martes", "Miercoles"]
     if dia_semana in examen:
         tomaron_examen = input("¿TOMARON EXAMEN? SI/NO: ") 
-        if tomaron_examen == "Si" or tomaron_examen == "si":
+        tomaron_examen = tomaron_examen.capitalize()
+        if tomaron_examen == "Si":
             aprobados_examen = int(input("¿CUANTOS APROBARON?:  "))
             desaprobados_examen = int(input("¿CUANTOS DESAPROBARON?:  "))
             total_examenes = aprobados_examen + desaprobados_examen
