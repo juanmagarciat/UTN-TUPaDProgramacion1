@@ -35,6 +35,14 @@ if dia_semana == "Jueves":
         print("ASISTIO LA MAYORIA")
     else:
         print("NO ASISTIO LA MAYORIA")
+#VERIFICAR SI ES EL COMIENZO DE UN CICLO LECTIVO DE INGLES PARA VIAJEROS Y CALCULAR EL ARANCEL
+if dia_semana=="Viernes":
+    if dia_num==1 and (mes_num==1 or mes_num==7):
+        print("COMIENZO DE UN NUEVO CICLO LECTIVO")
+        cantidad_alumnos = int(input("INGRESE LA CANTIDAD DE ALUMNOS: "))
+        arancel_por_alumno = int(input("INGRESE EL ARANCEL POR ALUMNO: "))
+        ingreso_total = cantidad_alumnos * arancel_por_alumno
+        print(f"EL INGRESO TOTAL ES {ingreso_total}$")
 
 
 
