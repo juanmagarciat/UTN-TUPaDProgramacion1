@@ -26,3 +26,11 @@ elif edad >= 18 and edad < 30:
     print("ESTAS EN LA CATEGORIA ADULTO/A JOVEN")
 else:
     print("ESTAS EN LA CATEGORIA ADULTO/A")
+#5)
+contrasena = input("INGRESE SU CONTRASEÑA (ENTRE 8 Y 14 CARACTERES): ")
+cant_caracters = len(contrasena)
+if cant_caracters >= 8 and cant_caracters <= 14:
+    print("CONTRASEÑA VALIDA")
+else:
+    print("CONTRASEÑA NO CUMPLE CON LOS CARACTERES")
+
