@@ -42,9 +42,13 @@ print("CALCULO LA MEDIA, LA MODA Y LA MEDIANA Y EL SESGO DE UNA LISTA DE 50 NUME
 
 numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
 
+#CALCULAR LA MODA, MEDIA Y MEDIANA DE LA LISTA
+
 moda = mode(numeros_aleatorios)
 mediana = median(numeros_aleatorios)
 media = mean(numeros_aleatorios)
+
+#MUESTRO EN PANTALLA LOS RESULTADOS
 
 print(f"LA MODA DE LA LISTA ES {moda}")
 print(f"LA MEDIANA DE LA LISTA ES {mediana}")
@@ -57,3 +61,5 @@ elif media < mediana and mediana < moda:
     print("LA LISTA TIENE SESGO NEGATIVO")
 elif media == mediana and mediana == moda:
     print("SIN SESGO")
+
+#7)
