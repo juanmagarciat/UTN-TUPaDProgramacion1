@@ -33,4 +33,27 @@ if cant_caracters >= 8 and cant_caracters <= 14:
     print("CONTRASEÑA VALIDA")
 else:
     print("CONTRASEÑA NO CUMPLE CON LOS CARACTERES")
+#6)
 
+from statistics import mode, median, mean
+import random
+
+print("CALCULO LA MEDIA, LA MODA Y LA MEDIANA Y EL SESGO DE UNA LISTA DE 50 NUMEROS ALEATORIOS:")
+
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+
+moda = mode(numeros_aleatorios)
+mediana = median(numeros_aleatorios)
+media = mean(numeros_aleatorios)
+
+print(f"LA MODA DE LA LISTA ES {moda}")
+print(f"LA MEDIANA DE LA LISTA ES {mediana}")
+print(f"LA MEDIA DE LA LISTA ES {media}")
+
+#CALCULAR EL SESGO DE LA LISTA (SI ES POSITIVO, NEGATIVO O SIN SESGO)
+if media > mediana and mediana > moda:
+    print("LA LISTA TIENE SESGO POSITIVO")
+elif media < mediana and mediana < moda:
+    print("LA LISTA TIENE SESGO NEGATIVO")
+elif media == mediana and mediana == moda:
+    print("SIN SESGO")
