@@ -5,18 +5,21 @@ if edad >= 18:
 else:
     print("NO ES MAYOR DE EDAD")
 #2)
+print("")
 nota = int(input("INGRESE LA NOTA: "))
 if nota >= 6:
     print("APROBADO")
 else:
     print("DESAPROBADO")
 #3)
+print("")
 numero = int(input("INGRESE UN NUMERO PAR: "))
 if numero % 2 == 0:
     print("EL NUMERO ES PAR")
 else:
     print("POR FAVOR INGRESE UN NUMERO PAR")
 #4)
+print("")
 edad = int(input("INGRESE SU EDAD: "))
 if edad < 12:
     print("ESTAS EN LA CATEGORIA NIÑO/A")
@@ -27,6 +30,7 @@ elif edad >= 18 and edad < 30:
 else:
     print("ESTAS EN LA CATEGORIA ADULTO/A")
 #5)
+print("")
 contrasena = input("INGRESE SU CONTRASEÑA (ENTRE 8 Y 14 CARACTERES): ")
 cant_caracters = len(contrasena)
 if cant_caracters >= 8 and cant_caracters <= 14:
@@ -34,7 +38,7 @@ if cant_caracters >= 8 and cant_caracters <= 14:
 else:
     print("CONTRASEÑA NO CUMPLE CON LOS CARACTERES")
 #6)
-
+print("")
 from statistics import mode, median, mean
 import random
 
@@ -61,12 +65,28 @@ elif media < mediana and mediana < moda:
     print("LA LISTA TIENE SESGO NEGATIVO")
 elif media == mediana and mediana == moda:
     print("SIN SESGO")
+else:
+    print("NO CUMPLE CON NINGUNO DE LOS CASOS")
 
 #7)
+print("")
 texto = input("INGRESE UN TEXTO O FRASE: ")
 if texto[-1].lower() in "aeiou":
     print(f"{texto}!")
 else: 
     print(texto)
 #8)
-
+print("")
+nombre = input("INGRESE SU NOMBRE: ")
+opcion = int(input("ELIJA UNA OPCIÓN PARA VISUALIZAR SU NOMBRE (1: EN MAYUSCULAS 2: EN MINUSCULAS 3: PRIMERA EN MAYUSCULA): "))
+if opcion == 1:
+    nombre = nombre.upper()
+    print(nombre)
+elif opcion == 2:
+    nombre = nombre.lower()
+    print(nombre)
+elif opcion == 3:
+    nombre = nombre.capitalize()
+    print(nombre)
+else:
+    print("ELIJA UNA OPCION VALIDA")
