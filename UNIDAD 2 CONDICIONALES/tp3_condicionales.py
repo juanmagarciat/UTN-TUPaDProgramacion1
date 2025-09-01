@@ -63,3 +63,10 @@ elif media == mediana and mediana == moda:
     print("SIN SESGO")
 
 #7)
+texto = input("INGRESE UN TEXTO O FRASE: ")
+if texto[-1].lower() in "aeiou":
+    print(f"{texto}!")
+else: 
+    print(texto)
+#8)
+
