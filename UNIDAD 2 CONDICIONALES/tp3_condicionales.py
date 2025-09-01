@@ -93,7 +93,6 @@ else:
 #9
 magnitud = float(input("Ingrese la magnitud del terremoto: "))
 
-# Clasificación según la magnitud
 if magnitud < 3:
     print("Muy leve (imperceptible).")
 elif magnitud >= 3 and magnitud < 4:
@@ -106,3 +105,32 @@ elif magnitud >= 6 and magnitud < 7:
     print("Muy Fuerte (puede causar daños significativos).")
 else:  # magnitud >= 7
     print("Extremo (puede causar graves daños a gran escala).")
+
+#10
+
+# Pedir datos al usuario
+hemisferio = input("INGRESE EL HEMISFERIO (N/S): ").upper()
+mes = int(input("INGRESE EL MES (1-12): "))
+dia = int(input("INGRESE EL DIA DEL MES: "))
+
+# Determinar estación
+if (mes == 12 and dia >= 21) or (1 <= mes <= 2) or (mes == 3 and dia <= 20):
+    estacion_norte = "INVIERNO"
+    estacion_sur = "VERANO"
+elif (mes == 3 and dia >= 21) or (4 <= mes <= 5) or (mes == 6 and dia <= 20):
+    estacion_norte = "PRIMAVERA"
+    estacion_sur = "OTOÑO"
+elif (mes == 6 and dia >= 21) or (7 <= mes <= 8) or (mes == 9 and dia <= 20):
+    estacion_norte = "VERANO"
+    estacion_sur = "INVIERNO"
+else:  # (mes == 9 y dia >= 21) hasta (mes == 12 y dia <= 20)
+    estacion_norte = "OTOÑO"
+    estacion_sur = "PRIMAVERA"
+
+# Mostrar resultado según hemisferio
+if hemisferio == "N":
+    print(f"EN EL HEMISFERIO NORTE ES {estacion_norte}.")
+elif hemisferio == "S":
+    print(f"EN EL HEMISFERIO SUR ES {estacion_sur}.")
+else:
+    print("HEMISFERIO NO VALIDO DEBE SER N O S")
