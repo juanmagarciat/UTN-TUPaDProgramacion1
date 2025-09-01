@@ -91,6 +91,7 @@ elif opcion == 3:
 else:
     print("ELIJA UNA OPCION VALIDA")
 #9
+print("")
 magnitud = float(input("Ingrese la magnitud del terremoto: "))
 
 if magnitud < 3:
@@ -107,7 +108,7 @@ else:  # magnitud >= 7
     print("Extremo (puede causar graves daños a gran escala).")
 
 #10
-
+print("")
 # Pedir datos al usuario
 hemisferio = input("INGRESE EL HEMISFERIO (N/S): ").upper()
 mes = int(input("INGRESE EL MES (1-12): "))
