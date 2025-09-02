@@ -17,7 +17,6 @@ for i in range(5):
             encriptado += letra_corrida
         else:  # si no es letra (número o símbolo) queda igual
             encriptado += letra
-            
     print(encriptado)
     encriptado = ""
 
