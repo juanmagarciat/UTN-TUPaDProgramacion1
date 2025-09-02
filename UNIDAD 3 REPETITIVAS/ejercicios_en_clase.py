@@ -10,9 +10,7 @@ for i in range(5):
     for letra in mensaje:
         if letra in abecedario:  # solo encripta letras
             posicion = abecedario.index(letra)
-            posicion_corrida = posicion + corrimiento
-            if posicion_corrida > 25:
-                posicion_corrida -= 26
+            posicion_corrida = (posicion + corrimiento)%26
             letra_corrida = abecedario[posicion_corrida]
             encriptado += letra_corrida
         else:  # si no es letra (número o símbolo) queda igual
