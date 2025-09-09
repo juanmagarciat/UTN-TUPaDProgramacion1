@@ -31,3 +31,17 @@ while numero != 0:
         print("SALIENDO...")
 print("")
 print(f"EL TOTAL ACUMULADO ES {sumatoria}")
+#Ejercicio 5: Crea un juego en el que el usuario deba adivinar un número aleatorio entre 0 y 9. Al final, el
+#programa debe mostrar cuántos intentos fueron necesarios para acertar el número.
+import random
+numero_adivinar = random.randint(0,9)
+num_usuario = 0
+intentos = 0
+while num_usuario != numero_adivinar: 
+    intentos += 1
+    if intentos == 1:
+        num_usuario = int(input("ADIVINA EL NUMERO DEL 0 AL 9: "))
+    else:
+        num_usuario = int(input("INTENTALO DE NUEVO!: "))
+print("ADIVINASTE!")
+print(f"EL NUMERO ERA {numero_adivinar} Y LO ADIVINASTE EN {intentos} INTENTOS")
