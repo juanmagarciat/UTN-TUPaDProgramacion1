@@ -18,3 +18,16 @@ sumatoria = 0
 for i in range(numero_1+1, numero_2):
     sumatoria += i
 print(f"LA SUMATORIA DE LOS NUMEROS ENTRE {numero_1} Y {numero_2} ES: {sumatoria}")
+#Ejercicio 4: Elabora un programa que permita al usuario ingresar números enteros y los sume en
+#secuencia. El programa debe detenerse y mostrar el total acumulado cuando el usuario ingrese un 0.
+numero = 1
+sumatoria = 0
+while numero != 0:
+    print("")
+    numero = int(input("INGRESE UN NUMERO PARA AGREGAR A LA SUMATORIA (O INGRESE 0 PARA MOSTRAR EL TOTAL ACUMULADO): "))
+    sumatoria += numero
+    if numero == 0:
+        print("")
+        print("SALIENDO...")
+print("")
+print(f"EL TOTAL ACUMULADO ES {sumatoria}")
