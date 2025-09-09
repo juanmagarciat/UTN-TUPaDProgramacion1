@@ -79,3 +79,15 @@ print("NUMEROS PARES:", pares)
 print("NUMEROS IMPARES:", impares)
 print("NUMEROS POSITIVOS:", positivos)
 print("NUMEROS NEGATIVOS:", negativos)
+#Ejercicio 9: Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la
+#media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
+#poder procesar 100 números cambiando solo un valor).
+suma = 0
+cantidad_numeros = 100
+
+for i in range(cantidad_numeros):
+    numero = int(input(f"INGRESE EL NUMERO {i+1}: "))
+    suma += numero
+
+media = suma / cantidad_numeros
+print("LA MEDIA ES:", media)
