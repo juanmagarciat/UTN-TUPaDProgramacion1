@@ -6,10 +6,13 @@ for i in range(0,101):
 numero = int(input("INGRESE UN NUMERO ENTERO PARA DETERMINAR CUANTOS DIGITOS TIENE: "))
 numero = abs(numero)
 digitos = 0
-while numero > 0:
-    numero = numero // 10
-    digitos += 1
-print(f"EL NUMERO TIENE {digitos} DIGITOS ")
+if numero == 0:
+    digitos = 1
+else:
+    while numero > 0:
+        numero = numero // 10
+        digitos += 1
+print(f"EL NUMERO TIENE {digitos} DIGITOS")
 #Ejercicio 3: Escribe un programa que sume todos los números enteros comprendidos entre dos valores
 #dados por el usuario, excluyendo esos dos valores.
 numero_1 = int(input("INGRESE EL PRIMER NUMERO PARA HACER LA SUMATORIA: "))
@@ -102,10 +105,13 @@ if numero < 0:
 
 numero_invertido = 0
 
-while numero > 0:
-    digito = numero % 10
-    numero_invertido = numero_invertido * 10 + digito
-    numero = numero // 10
+if numero == 0:
+    numero_invertido = 0
+else:
+    while numero > 0:
+        digito = numero % 10
+        numero_invertido = numero_invertido * 10 + digito
+        numero = numero // 10
 
 if negativo:
     numero_invertido = -numero_invertido
