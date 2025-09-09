@@ -45,3 +45,12 @@ while num_usuario != numero_adivinar:
         num_usuario = int(input("INTENTALO DE NUEVO!: "))
 print("ADIVINASTE!")
 print(f"EL NUMERO ERA {numero_adivinar} Y LO ADIVINASTE EN {intentos} INTENTOS")
+#Ejercicio 6: Desarrolla un programa que imprima en pantalla todos los números pares comprendidos entre 0 y 100, en orden decreciente.
+for i in range(100,1,-2):
+    print(i)
+#Ejercicio 7: Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un \número entero positivo indicado por el usuario.
+num_usuario = int(input("INGRESE UN NUMERO POSITIVO PARA LA SUMATORIA ENTRE 0 Y DICHO NUMERO: "))
+sumatoria = 0
+for i in range(0, num_usuario):
+    sumatoria += i
+print(f"LA SUMATORIA DE LOS NUMEROS COMPRENDIDOS ENTRE 0 Y {num_usuario} ES: {sumatoria}")
