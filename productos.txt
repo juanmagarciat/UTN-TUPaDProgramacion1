@@ -1,0 +1,4 @@
+Pan,{'Nombre': 'Pan', 'Precio': '3000', 'Cantidad': ''},
+Pan,{'Nombre': 'Pan', 'Precio': '3000', 'Cantidad': ''},
+Pan,{'Nombre': 'Pan', 'Precio': '3000', 'Cantidad': ''},
+Pan,{'Nombre': 'Pan', 'Precio': '3000', 'Cantidad': ''},
